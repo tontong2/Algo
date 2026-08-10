@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdlib.h>
+
+
+long long solution(long long n) {
+    long long answer = -1;
+    long long temp = 0;
+    
+    for(long long i=1; i<=n; i++){
+        temp = i*i;
+        if(temp == n){
+            answer = (i+1)*(i+1);
+            break;
+        }
+    }
+    return answer;
+}
